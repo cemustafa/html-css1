@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    height: calc(100vh-100px);
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.menu{
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+    
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    
+}
+.menu ul a{
+    text-decoration: none;
+    color: #fff;
+    transition: color .25s ease;
+    
+}
+
+.menu ul a:hover{
+    color: #0ba2c0;
+}
+
+.link{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    text-decoration: none;
+    color: #0ba2c0;
+    transition: all .25s ease-in;
+    
+}
+
+.link:hover{
+    color:#fff;
+    background-color: #0ba2c0;
+}
+
+
+.section{
+    margin-top: 150px;
+    text-align: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 60px;    
+}
+
+p{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 32px;
+}
+.btn{
+    margin-top: 50px;
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+
+.btn a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    border-radius: 56px;
+    padding: 20px;
+    width: 280px;
+    font-size: 18px;
+    transition: all .25s ease-in;
+}
+
+.btn a:hover{
+    color: #fff;
+    background-color: #0ba2c0;
+}
+
+@media (max-width:570px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar{
+        margin:0px 12px;
+        
+        
+    }
+
+    .link{
+        display: none;
+    }
+
+    .menu ul {
+        column-gap: 20px;
+    }
+
+    .section{
+        margin-top: 50px;
+        
+    }
+
+    h1{
+        font-size: 36px;
+
+    }
+
+    p{
+        font-size: 16px;
+    
+    }
+
+    .btn{
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+
+    }
+
+    .btn a{
+        width:90%;
+        padding: 14px;
+    }
+}
+   
